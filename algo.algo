@@ -1,0 +1,29 @@
+algo :
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+vote uninominal majoritaire:
+
+fonction Classement (Candidats : in liste_de string , resultat : in liste_de entier_naturel) renvoie liste_de string
+debut
+
+
+
+fonction UninominalMajoritaire (Candidats : in liste_de string , Lvote : in liste_de string) renvoie liste_de string
+debut
+
+  LCompte1 : liste_de taille(Candidats) entier_naturel; // liste des résulats du premier tour
+  Compteur : entier_naturel; // un compteur banal
+
+  pour (i variant_de 0 a taille(Lvote)-1) // Pour chaque vote
+  faire
+    Compteur<-0;
+    tant_que (Compteur<taille(Candidats) et_alors Lvote[i] ne_vaut_pas Candidats[Compteur]) //on regarde si le string dans le vote se trouve dans la liste des Candidats
+    faire
+      Compteur<-Compteur+1;
+    ffaire
+    si (Compteur ne_vaut_pas taille(Candidats)) // si le vote est correct alors on ajoute 1 point au Candidat
+      Lcompte1[Compteur]<-Lcompte1[Compteur]+1;
+    fsi
+  ffaire
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

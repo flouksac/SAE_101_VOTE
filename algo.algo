@@ -6,9 +6,9 @@ vote uninominal majoritaire:
 fonction Classement (Candidats : in liste_de string , resultat : in liste_de entier_naturel) renvoie liste_de string
 debut
 
+fin
 
-
-fonction UninominalMajoritaire (Candidats : in liste_de string , Lvote : in liste_de string) renvoie liste_de string
+fonction UninominalMajoritaire (Candida : in liste_de string , Lvote : in liste_de string) renvoie liste_de string
 debut
 
   LCompte1 : liste_de taille(Candidats) entier_naturel; // liste des résulats du premier tour
@@ -25,5 +25,5 @@ debut
       Lcompte1[Compteur]<-Lcompte1[Compteur]+1;
     fsi
   ffaire
-
+fin
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

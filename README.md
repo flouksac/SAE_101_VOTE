@@ -1,2 +1,5 @@
 # SAE_101_VOTE
-repository de la sae de casali, implémentation de 4 systeme de vote ou plus
+
+repository de la sae de casali :
+
+![alt text](/image/consigne.png)
